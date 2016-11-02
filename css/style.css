@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+* {
+  font-family: 'Muli', sans-serif;
+}
+div.img-login {
+  height: 100vh;
+  background-image: url('../images/login.jpeg');
+  background-size: cover;
+  background-position: center;
+}
