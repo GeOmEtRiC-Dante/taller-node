@@ -2,9 +2,57 @@
 * {
   font-family: 'Muli', sans-serif;
 }
+nav.navbar-default {
+  padding-bottom: 0px;
+  background-color: #1f2b44;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #0098da;
+  box-shadow: 0px 0px 5px #0098da;
+  margin-bottom: 10px;
+}
+nav.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+nav.navbar-default .navbar-nav > li > a:hover {
+  color: rgba(255, 255, 255, 0.8)
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 div.img-login {
   height: 100vh;
   background-image: url('../images/login.jpeg');
   background-size: cover;
   background-position: center;
+}
+div.box-signup {
+  background: #ffffff;
+}
+div.img-signup {
+  background-image: url('../images/signup.jpeg');
+  background-position:right;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+a.navbar-brand .img-navbar {
+  width: 70px;
+  margin-top: -10px;
+}
+*.btn-primary {
+  background-color: #0098da;
+  border-color: #0098da;
+}
+*.btn-primary:hover {
+  background-color: #1689ba;
+  border-color: #1689ba;
+}
+a.img-perfil {
+  padding: 0px !important;
+}
+a.img-perfil img{
+  margin-top: 1px;
+  height: 48px;
 }
