@@ -43,10 +43,10 @@
             <li class="dropdown text-center">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Ver mi perfil</a></li>
-                <li><a href="#">Configuracion</a></li>
+                <li class="text-center"><a href="#">Ver mi perfil</a></li>
+                <li class="text-center"><a href="#">Configuracion</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesión</a></li>
+                <li class="text-center"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesión</a></li>
               </ul>
             </li>
           </ul>
@@ -55,7 +55,208 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+              <div class="row">
+                <form class="col-sm-12 col-xs-12" id="form-estado">
+                  <div class="form-group box-form">
+                    <div class="col-md-12 box-input" contenteditable="true" placeholder="Escribe aquí que estas pensando papu" name="history"></div>
+                  </div>
+                  <div class="form-group pull-right">
+                    <button type="button" class="btn btn-default"><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+                    <button type="submit" class="btn btn-primary">Publicar</button>
+                  </div>
+                </form>
+              </div>
+              <!--Post -->
+              <div class="row">
+                <div class="col-sm-12 box-body">
+                  <div class="row user-post">
+                    <div class="col-md-2 col-sm-3 col-xs-2 text-center">
+                      <img src="images/user-perfil.png" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-md-10 col-sm-9 col-xs-10">
+                      <a href="#">Geometric</a> <i class="fa fa-mars" aria-hidden="true"></i><br>
+                      <span>55 min <i class="fa fa-clock-o" aria-hidden="true"></i></span><br>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="reactions">
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> + 99999</button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-smile-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-meh-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-frown-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-star" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="comment">
+                        <div class="col-md-1 col-sm-1 col-xs-1">
+                          <img src="images/user-perfil.png" class="img-responsive" alt="" />
+                        </div>
+                        <div class="col-md-9 col-sm-10 col-xs-10">
+                          <div class="box-input" contenteditable="true" placeholder="Escribe algo al respecto..."></div>
+                        </div>
+                        <div class="col-md-2 col-sm-1 col-xs-1">
+                          <button type="button" name="button" class="btn btn-default btn-block"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row comment-post">
+                    <div class="col-md-12">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" style="height: 36px; width:36px;" src="images/user-perfil.png" alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <p class="comment-post-p">
+                             <a href="#">Usuario Anonimo</a> <span class="time">Hace un momento</span><br>
+                             <span>asd asdad </span> <br>
+                             <a href="#">Responder</a>
+                          </p>
+                          <div class="media">
+                            <div class="media-left media-middle">
+                              <a href="#">
+                                <img class="media-object" style="height: 36px; width:36px;" src="images/user-perfil.png" alt="...">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p class="comment-post-p">
+                                 <a href="#">Usuario Anonimo</a> <span class="time">Hace un momento</span><br>
+                                 <span>asd asdad </span> <br>
+                                 <a href="#">Responder</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Post -->
+              <!--Post -->
+              <div class="row">
+                <div class="col-sm-12 box-body">
+                  <div class="row user-post">
+                    <div class="col-md-2 col-sm-3 col-xs-2 text-center">
+                      <img src="images/user-perfil.png" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-md-10 col-sm-9 col-xs-10">
+                      <a href="#">Geometric</a> <i class="fa fa-shield" aria-hidden="true"></i><br>
+                      <span>55 min <i class="fa fa-clock-o" aria-hidden="true"></i></span><br>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="reactions">
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> + 99999</button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-smile-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-meh-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-frown-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-default col-sm-2 col-xs-2"><i class="fa fa-star" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="comment">
+                        <div class="col-md-1 col-sm-1 col-xs-1">
+                          <img src="images/user-perfil.png" class="img-responsive" alt="" />
+                        </div>
+                        <div class="col-md-9 col-sm-10 col-xs-10">
+                          <div class="box-input" contenteditable="true" placeholder="Escribe algo al respecto..."></div>
+                        </div>
+                        <div class="col-md-2 col-sm-1 col-xs-1">
+                          <button type="button" name="button" class="btn btn-default btn-block"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row comment-post">
+                    <div class="col-md-12">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" style="height: 36px; width:36px;" src="images/user-perfil.png" alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <p class="comment-post-p">
+                             <a href="#">Usuario Anonimo</a> <span class="time">Hace 1 min</span> <br>
+                             <span>asd asdad </span> <br>
+                             <a href="#">Responder</a>
+                          </p>
+                          <div class="media">
+                            <div class="media-left media-middle">
+                              <a href="#">
+                                <img class="media-object" style="height: 36px; width:36px;" src="images/user-perfil.png" alt="...">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p class="comment-post-p">
+                                 <a href="#">Usuario Anonimo</a> <span class="time">Hace un momento</span> <br>
+                                 <span>asd asdad </span> <br>
+                                 <a href="#">Responder</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Post -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <!-- Espacio para el chat-->
+        </div>
       </div>
     </div>
 

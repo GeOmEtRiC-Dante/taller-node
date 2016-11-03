@@ -9,7 +9,6 @@ nav.navbar-default {
   border: none;
   border-bottom: 2px solid;
   border-color: #0098da;
-  box-shadow: 0px 0px 5px #0098da;
   margin-bottom: 10px;
 }
 nav.navbar-default .navbar-nav > li > a {
@@ -55,4 +54,139 @@ a.img-perfil {
 a.img-perfil img{
   margin-top: 1px;
   height: 48px;
+}
+li.dropdown {
+  color: #fff !important;
+}
+a.dropdown-toggle{
+  color: #fff;
+}
+a.dropdown-toggle:active{
+  color: #fff;
+}
+a.dropdown-toggle:focus{
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: #fff;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+}
+body {
+  background-color: rgb(245, 245, 245);
+}
+div.box-body {
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+#form-estado {
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+#form-estado textarea{
+  resize: vertical;
+  border: 0px;
+  border-bottom: 2px solid #0098da;
+  outline: none;
+}
+#form-estado textarea:focus{
+  outline: none !important;
+  box-shadow: none;
+}
+#form-estado textarea:active{
+  outline: none !important;
+  box-shadow: none;
+}
+*.form-group {
+  margin-bottom: 5px;
+}
+*.box-input {
+  outline: none;
+  border-bottom: 2px solid rgba(0, 152, 218, 0.2);
+  transition: all 0.3s;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+div[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  color: #afafaf;
+  cursor: text;
+  display: block; /* For Firefox */
+}
+
+*.box-input:focus {
+  border-bottom: 2px solid #0098da;
+}
+*.user-post {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid rgba(54, 103, 161, 0.29)
+}
+*.reactions {
+  padding: 0px;
+  width: 100%;
+  background: pink;
+}
+*.reactions > div {
+  float: left;
+  text-align: center;
+  width: 16.66666666666667%;
+}
+*.reactions > div > button{
+  border-radius: 0px;
+  border: none;
+  border-right: 1px solid #ccc;
+  border-top: 2px solid rgba(54, 103, 161, 0.29);
+  border-bottom: 2px solid rgba(54, 103, 161, 0.29);
+  width: 100%;
+}
+*.reactions div > button:nth-child(2){
+  background: pink;
+}
+*.reactions > div > button > i{
+  font-size: 16px;
+}
+*.comment {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  border-bottom: 2px solid rgb(54, 103, 161);
+}
+*.comment div {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+*.comment div.box-input {
+  padding: 10px;
+}
+*.comment div:focus {
+  border: none;
+}
+*.comment div img{
+  padding: 4px;
+}
+.media-body p {
+  margin: 0px;
+}
+.media-body p span.time{
+  color: #9c9c9c;
+  font-size: 12px;
+}
+.media {
+  margin-top: 4px;
 }
